@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight=".2" />
+
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1" android:orientation="vertical">
+
+        <TextView android:id="@+id/textView" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:text="Rename Meter" android:textSize="30dp" />
+
+        <Space android:layout_width="match_parent" android:layout_height="20dp" />
+
+        <EditText android:id="@+id/meter_rename_edit" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:editable="true" android:maxLength="16" android:singleLine="true"
+            android:text="Mooshimeter V.1" android:textAlignment="center" android:textSize="24dp" />
+
+        <Space android:layout_width="match_parent" android:layout_height="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:text="Logging Interval" android:textSize="30dp" />
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/rate_button0" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:onClick="Rate0Click" android:text="MAX" />
+
+            <Button android:id="@+id/rate_button1" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:onClick="Rate1Click" android:text="1s" />
+
+            <Button android:id="@+id/rate_button2" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:onClick="Rate2Click" android:text="10s" />
+
+            <Button android:id="@+id/rate_button3" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:onClick="Rate3Click" android:text="1min" />
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button android:id="@+id/button" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:onClick="hibernateOnClick" android:text="HIBERNATE" android:textSize="30dp" />
+
+        <TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:text="Sets the Mooshimeter to hibernation mode and turns off the Bluetooth Radio.  To wake it you will need to connect the C and Ω inputs for 10 seconds."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Space android:layout_width="match_parent" android:layout_height="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <CheckBox android:id="@+id/auto_connect_checkbox" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Connect automatically" />
+
+    </LinearLayout>
+
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight=".2" />
+
+</LinearLayout>

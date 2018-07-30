@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.jjoe64.graphview.GraphView android:id="@+id/graph" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button android:id="@+id/graph_settings_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" android:layout_gravity="center_vertical"
+        android:background="@drawable/custom_button_background"
+        android:onClick="onSettingsButtonClick" android:text="Settings" />
+
+    <Button android:id="@+id/graph_play_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" android:layout_gravity="center_vertical"
+        android:background="@drawable/custom_button_background" android:onClick="onPlayButtonClick"
+        android:text="Pause" />
+
+    <LinearLayout android:id="@+id/settings_view" android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:layout_margin="50dp"
+        android:orientation="vertical" android:visibility="invisible">
+
+        <Button android:id="@+id/trend_button" android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:background="@drawable/custom_button_background"
+            android:onClick="onTrendButtonClick" android:text="Trend Mode"
+            android:textSize="32dp" />
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:orientation="horizontal">
+
+            <Button android:id="@+id/ch1_button" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:background="@drawable/custom_button_background"
+                android:onClick="onCH1ButtonClick" android:text="CH1: ON" android:textSize="32dp" />
+
+            <Button android:id="@+id/ch2_button" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:background="@drawable/custom_button_background"
+                android:onClick="onCH2ButtonClick" android:text="CH2: ON" android:textSize="32dp" />
+
+            <Button android:id="@+id/xy_button" android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:background="@drawable/custom_button_background"
+                android:onClick="onXYButtonClick" android:text="XY: OFF" android:textSize="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar android:id="@+id/graph_progress_spinner"
+        style="?android:attr/progressBarStyleLarge" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal" android:layout_weight="1"
+        android:indeterminate="true" android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true" android:visibility="invisible" />
+
+</RelativeLayout>

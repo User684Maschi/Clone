@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?><!-- TODO: The proportions on all graphical elements here should be reset to look more like the iOS
+app.  https://itunes.apple.com/us/app/mooshimeter/id945898277?mt=8
+The iOS app screen is in 10 rows, 6 columns.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="horizontal">
+
+        <Button android:id="@+id/ch1_display_set_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="2" android:background="@drawable/custom_button_background"
+            android:onClick="onCh1DisplaySetClick" android:text="CH1 LABEL"
+            android:textSize="24dp" />
+
+        <Button android:id="@+id/ch1_range_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:background="@drawable/custom_button_background"
+            android:onClick="onCh1RangeClick" android:text="RANGE" android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="2" android:orientation="horizontal">
+
+        <TextView android:id="@+id/ch1_value_label" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="2.36"
+            android:text="OVERLOAD" android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false" android:textSize="74dp" android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="horizontal">
+
+        <Button android:id="@+id/ch1_range_auto_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:background="@drawable/custom_button_background"
+            android:onClick="onCh1RangeAutoClick" android:text="A" android:textSize="24dp" />
+
+        <Button android:id="@+id/button2" style="@style/AppBaseTheme" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="1"
+            android:background="@drawable/custom_button_background"
+            android:onClick="onCh1RangeAutoClick" android:text="A" android:textSize="24dp" />
+
+        <Button android:id="@+id/ch1_units_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="3" android:background="@drawable/custom_button_background"
+            android:onClick="onCh1UnitsClick" android:text="UNITS" android:textSize="24dp" />
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent" android:layout_height="20px"
+        android:background="#ff000000" />
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="horizontal">
+
+        <Button android:id="@+id/ch2_display_set_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="2" android:background="@drawable/custom_button_background"
+            android:onClick="onCh2DisplaySetClick" android:text="CH2 LABEL"
+            android:textSize="24dp" />
+
+        <Button android:id="@+id/ch2_input_set_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:background="@drawable/custom_button_background"
+            android:onClick="onCh2InputSetClick" android:text="INP" android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="2" android:orientation="horizontal" android:weightSum="1">
+
+        <TextView android:id="@+id/ch2_value_label" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1.36"
+            android:text="OVERLOAD" android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false" android:textSize="74dp" android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="horizontal">
+
+        <Button android:id="@+id/ch2_range_auto_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:background="@drawable/custom_button_background"
+            android:onClick="onCh2RangeAutoClick" android:text="A" android:textSize="24dp" />
+
+        <Button android:id="@+id/ch2_range_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="2" android:background="@drawable/custom_button_background"
+            android:onClick="onCh2RangeClick" android:text="RANGE" android:textSize="24dp" />
+
+        <Button android:id="@+id/ch2_units_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="3" android:background="@drawable/custom_button_background"
+            android:onClick="onCh2UnitsClick" android:text="UNITS" android:textSize="24dp" />
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent" android:layout_height="20px"
+        android:background="#ff000000" />
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="horizontal">
+
+        <Button android:id="@+id/rate_auto_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:background="@drawable/custom_button_background"
+            android:onClick="onRateAutoClick" android:text="A" android:textSize="24dp" />
+
+        <Button android:id="@+id/rate_button" style="@style/AppBaseTheme" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="2"
+            android:background="@drawable/custom_button_background" android:onClick="onRateClick"
+            android:text="125Hz" android:textSize="24dp" />
+
+        <Button android:id="@+id/logging_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="3" android:background="@drawable/custom_button_background"
+            android:onClick="onLoggingClick" android:text="Logging:OFF" android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="horizontal">
+
+        <Button android:id="@+id/depth_auto_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:background="@drawable/custom_button_background"
+            android:onClick="onDepthAutoClick" android:text="A" android:textSize="24dp" />
+
+        <Button android:id="@+id/depth_button" style="@style/AppBaseTheme"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="2" android:background="@drawable/custom_button_background"
+            android:onClick="onDepthClick" android:text="32smpl" android:textSize="24dp" />
+
+        <Button android:id="@+id/zero_button" style="@style/AppBaseTheme" android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="3"
+            android:background="@drawable/custom_button_background" android:onClick="onZeroClick"
+            android:text="Zero" android:textSize="24dp" />
+    </LinearLayout>
+
+</LinearLayout>

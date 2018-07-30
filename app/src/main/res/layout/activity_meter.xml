@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ch1_input_set_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="2"
+            android:background="@drawable/button_normal"
+            android:onClick="onCh1InputSetClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="CH1 LABEL"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/ch1_range_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_auto"
+            android:gravity="center_horizontal|top"
+            android:onClick="onCh1RangeClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="AUTO\nRANGE"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ch1_value_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.36"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="LOADING"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false"
+            android:textSize="74dp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ch1_zero_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_normal"
+            android:onClick="onCh1ZeroClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ZERO"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/ch1_sound_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_normal"
+            android:onClick="onCh1SoundClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="SOUND"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#ff000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ch2_input_set_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="2"
+            android:background="@drawable/button_normal"
+            android:onClick="onCh2InputSetClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="CH2 LABEL"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/ch2_range_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_auto"
+            android:gravity="center_horizontal|top"
+            android:onClick="onCh2RangeClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="RANGE"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ch2_value_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.36"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="LOADING"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false"
+            android:textSize="74dp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ch2_zero_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_normal"
+            android:onClick="onCh2ZeroClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ZERO"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/ch2_sound_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_normal"
+            android:onClick="onCh2SoundClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="SOUND"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#ff000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/power_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="N/A"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false"
+            android:textSize="36dp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/power_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="1"
+            android:background="@drawable/button_normal"
+            android:onClick="onPowerButtonClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="W"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#ff000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rate_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="2"
+            android:background="@drawable/button_auto"
+            android:gravity="center_horizontal|top"
+            android:onClick="onRateClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="125Hz"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/depth_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="2"
+            android:background="@drawable/button_auto"
+            android:gravity="center_horizontal|top"
+            android:onClick="onDepthClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="32smpl"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/log_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="2"
+            android:background="@drawable/button_auto"
+            android:onClick="onLoggingClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="LOGGING:OFF"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/graph_button"
+            style="@style/AppBaseTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0px"
+            android:layout_weight="2"
+            android:background="@drawable/button_normal"
+            android:onClick="onGraphClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="GRAPH"
+            android:textSize="24dp" />
+    </LinearLayout>
+</LinearLayout>
